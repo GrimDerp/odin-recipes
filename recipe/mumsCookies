@@ -3,6 +3,28 @@
 
 <script>
 
+//mums cookie get & set
+//setter
+    function setCookie(key, value, days){
+        const d = new Date()
+        d.setTime(d.getTime() + (days * 86400000 ) )
+        document.cookie = key + '=' + encodeURI(value) +
+            ';expires=' + d.toUTCString() + ';'
+    }
+//getter
+    function getCookie( key ) {
+        if(document.cookie){
+            const pairs = decodeURI( documentCookie ).split(';')
+            let i, name, value
+            for( i=0 ; i < pairs.length ; i++ ){
+                name = (pairs[i].split( '=' )[0]).trim() //trime should* remove whitespace at end of name
+                if(name === key){
+                    value = pairs[i].split( '=' )[1]
+                }
+                return value
+            }
+        }
+    }
 
 
 
