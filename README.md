@@ -1,3 +1,3 @@
 # odin-recipes
 
-exercises
+exercises and recipes for html;+css+js boilerplate & templates
