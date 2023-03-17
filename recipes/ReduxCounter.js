@@ -1,8 +1,8 @@
-const INCREMENT = null; // Define a constant for increment action types
-const DECREMENT = null; // Define a constant for decrement action types
+const INCREMENT = "INCREMENT"; // Define a constant for increment action types
+const DECREMENT = "DECREMENT"; // Define a constant for decrement action types
 
-const counterReducer = funtion(state = 0, action){
-  switch action.type:
+const counterReducer = (state = 0, action) => {
+  switch (action.type) {
   case INCREMENT:
   return {
 
@@ -11,9 +11,12 @@ const counterReducer = funtion(state = 0, action){
   return{
     
   }
-}; 
+
 default:
 return state
+
+  }
+ };  
 // Define the counter reducer which will increment or decrement the state based on the action it receives
 
 const incAction = {
