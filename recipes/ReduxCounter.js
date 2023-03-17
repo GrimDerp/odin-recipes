@@ -30,3 +30,4 @@ const decAction = {
 }; // Define an action creator for decrementing
 
 const store = Redux.createStore(counterReducer); // Define the Redux store here, passing in your reducers
+//got it to work but forgot to save. todo..
